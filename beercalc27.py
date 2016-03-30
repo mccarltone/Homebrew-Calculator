@@ -38,7 +38,7 @@ while choice != "q":
 				break
 			except ValueError:
 				print "Please enter a number."
-		print "SG = ", brix_to_sg(brix)
+		print "SG = ", round(brix_to_sg(brix),3)
 		choice = raw_input("Option: ")
 
 # Choice '3' convert SG to Brix
@@ -49,7 +49,7 @@ while choice != "q":
 				break
 			except ValueError:
 				print "Please enter a number."
-		print "Brix = ", sg_to_brix(sg)
+		print "Brix = ", round(sg_to_brix(sg),2)
 		choice = raw_input("Option:")
 
 # Choice '4' find ABV using OG and FG
@@ -66,7 +66,7 @@ while choice != "q":
 				break
 			except ValueError:
 				print "Please enter a number."
-		print "ABV% = ", findABV(og , fg)
+		print "ABV = ", round(findABV(og , fg), 2), "%"
 		choice = raw_input("Option: ")
 
 	else:
